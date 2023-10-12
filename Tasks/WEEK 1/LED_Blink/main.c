@@ -1,3 +1,7 @@
+//snake effect
+//Author : Hamed
+
+
 #include <util/delay.h>
 typedef unsigned char u8;
 
@@ -18,11 +22,23 @@ typedef unsigned char u8;
 
 int main(void)
 {
-	//pin 4 out
-	setBit(DDRA,4);
-	setBit(PORTA,4);
+	//Setup PinMode A0 As output
+	setBit(DDRA,0);
+
+	//Super Loop
 	while(1){
-		_delay_ms(500);
+		//Write High on A0 PIN
+		setBit(PORTA,0);
+
+		//delay
+		_delay_ms(300);
+
+		//Write Low on A0 PIN
+		clrBit(PORTA,0);
+
+		//delay
+		_delay_ms(300);
 	}
+
 	return 0;
 }
