@@ -2,6 +2,11 @@
 #ifndef DIO_PRIV_H_
 #define DIO_PRIV_H_
 
+#define LOW 			0
+#define HIGH 			1
+
+#define INPUT 			0
+#define OUTPUT 			1
 
 #define DIO_PORTA 		0
 #define DIO_PORTB 		1
@@ -16,13 +21,6 @@
 #define DIO_PIN5 		5
 #define DIO_PIN6 		6
 #define DIO_PIN7 		7
-
-
-#define INPUT 			0
-#define OUTPUT 			1
-
-#define LOW 			0
-#define HIGH 			1
 
 
 #define PINA *((volatile u8*)0x39)

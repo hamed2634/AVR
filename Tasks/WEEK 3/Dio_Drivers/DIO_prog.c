@@ -212,16 +212,16 @@ ES DIO_enuGetpin(u8 Copy_u8PortID,u8 Copy_u8PinID, u8* Copy_pu8Value)
 	else{
 		switch(Copy_u8PortID){
 			case DIO_PORTA:
-				*Copy_pu8Value = getbit(PINA,Copy_u8PinID);
+				*Copy_pu8Value = getBit(PINA,Copy_u8PinID);
 				break;
 			case DIO_PORTB:
-				*Copy_pu8Value = getbit(PINB,Copy_u8PinID);
+				*Copy_pu8Value = getBit(PINB,Copy_u8PinID);
 				break;
 			case DIO_PORTC:
-				*Copy_pu8Value = getbit(PINC,Copy_u8PinID);
+				*Copy_pu8Value = getBit(PINC,Copy_u8PinID);
 				break;
 			case DIO_PORTD:
-				*Copy_pu8Value = getbit(PIND,Copy_u8PinID);
+				*Copy_pu8Value = getBit(PIND,Copy_u8PinID);
 				break;
 		}
 		Local_enuErrorState = ES_OK;
