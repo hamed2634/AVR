@@ -1,12 +1,12 @@
-main.o main.o: ../main.c ../stdTypes.h ../errorStates.h ../DIO_init.h \
-  ../Switch_config.h ../Switch_int.h
-
-../stdTypes.h:
+main.o main.o: ../main.c ../errorStates.h ../stdTypes.h \
+  ../Switch_config.h ../Switch_int.h ../DIO_int.h
 
 ../errorStates.h:
 
-../DIO_init.h:
+../stdTypes.h:
 
 ../Switch_config.h:
 
 ../Switch_int.h:
+
+../DIO_int.h:

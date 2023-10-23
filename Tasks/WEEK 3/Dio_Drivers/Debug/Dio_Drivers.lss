@@ -1473,8 +1473,8 @@ ES DIO_enuTogPin(u8 Copy_u8PortID, u8 Copy_u8PinID)
 0000096c <main>:
 #include "errorStates.h";
 
+#include "DIO_int.h"
 
-#include "DIO_init.h"
 
 int main(void){
  96c:	df 93       	push	r29

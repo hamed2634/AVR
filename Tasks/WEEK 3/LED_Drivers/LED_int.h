@@ -9,13 +9,13 @@
 #define LED_INT_H_
 
 
-ES LED_enuInit();
+ES LED_enuInit(LED* copy_PStrLED);
 
-ES LED_enuTurnLedON();
+ES LED_enuTurnLedON(LED* copy_PStrLED);
 
-ES LED_enuTurnLedOFF();
+ES LED_enuTurnLedOFF(LED* copy_AStrLEDS);
 
-ES LED_enuTogLed();
+ES LED_enuTogLed(LED* copy_PStrLED);
 
 
 #endif /* LED_INT_H_ */

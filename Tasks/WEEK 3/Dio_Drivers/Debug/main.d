@@ -1,7 +1,7 @@
-main.o main.o: ../main.c ../stdTypes.h ../errorStates.h ../DIO_init.h
+main.o main.o: ../main.c ../stdTypes.h ../errorStates.h ../DIO_int.h
 
 ../stdTypes.h:
 
 ../errorStates.h:
 
-../DIO_init.h:
+../DIO_int.h:

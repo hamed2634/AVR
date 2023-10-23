@@ -143,7 +143,7 @@ LOAD d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x18da
+.text           0x00000000     0x18ee
  *(.vectors)
  .vectors       0x00000000       0x54 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
                 0x00000000                __vectors
@@ -278,30 +278,30 @@ LOAD d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\
                 0x00001318      0x11e ./DIO_prog.o
                 0x00001318                DIO_enuTogPin
  .text.LED_enuInit
-                0x00001436      0x100 ./LED_prog.o
+                0x00001436      0x11c ./LED_prog.o
                 0x00001436                LED_enuInit
  .text.LED_enuTurnLedON
-                0x00001536       0x4c ./LED_prog.o
-                0x00001536                LED_enuTurnLedON
+                0x00001552       0x4c ./LED_prog.o
+                0x00001552                LED_enuTurnLedON
  .text.LED_enuTurnLedOFF
-                0x00001582       0x64 ./LED_prog.o
-                0x00001582                LED_enuTurnLedOFF
+                0x0000159e       0x64 ./LED_prog.o
+                0x0000159e                LED_enuTurnLedOFF
  .text.LED_enuTogLed
-                0x000015e6       0x44 ./LED_prog.o
-                0x000015e6                LED_enuTogLed
- .text.main     0x0000162a      0x23e ./main.o
-                0x0000162a                main
- .text.libgcc   0x00001868        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00001868        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00001868       0x38 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x00001868                __prologue_saves__
- .text.libgcc   0x000018a0       0x36 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x000018a0                __epilogue_restores__
-                0x000018d6                . = ALIGN (0x2)
+                0x00001602       0x44 ./LED_prog.o
+                0x00001602                LED_enuTogLed
+ .text.main     0x00001646      0x236 ./main.o
+                0x00001646                main
+ .text.libgcc   0x0000187c        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x0000187c        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000187c       0x38 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x0000187c                __prologue_saves__
+ .text.libgcc   0x000018b4       0x36 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x000018b4                __epilogue_restores__
+                0x000018ea                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000018d6        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x000018d6                exit
-                0x000018d6                _exit
+ .fini9         0x000018ea        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x000018ea                exit
+                0x000018ea                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -320,11 +320,11 @@ LOAD d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000018d6        0x4 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x000018ea        0x4 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000018da                _etext = .
+                0x000018ee                _etext = .
 
-.data           0x00800060       0x12 load address 0x000018da
+.data           0x00800060       0x14 load address 0x000018ee
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
@@ -350,51 +350,50 @@ LOAD d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\
  .data          0x00800068        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
  *(.data*)
  .data.LED_AStrLEDS
-                0x00800068        0x9 ./LED_config.o
+                0x00800068        0xc ./LED_config.o
                 0x00800068                LED_AStrLEDS
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.d*)
-                0x00800072                . = ALIGN (0x2)
- *fill*         0x00800071        0x1 00
-                0x00800072                _edata = .
-                0x00800072                PROVIDE (__data_end, .)
+                0x00800074                . = ALIGN (0x2)
+                0x00800074                _edata = .
+                0x00800074                PROVIDE (__data_end, .)
 
-.bss            0x00800072        0x0
-                0x00800072                PROVIDE (__bss_start, .)
+.bss            0x00800074        0x0
+                0x00800074                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
- .bss           0x00800072        0x0 ./DIO_prog.o
- .bss           0x00800072        0x0 ./LED_config.o
- .bss           0x00800072        0x0 ./LED_prog.o
- .bss           0x00800072        0x0 ./main.o
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
- .bss           0x00800072        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .bss           0x00800074        0x0 ./DIO_prog.o
+ .bss           0x00800074        0x0 ./LED_config.o
+ .bss           0x00800074        0x0 ./LED_prog.o
+ .bss           0x00800074        0x0 ./main.o
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .bss           0x00800074        0x0 d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
  *(.bss*)
  *(COMMON)
-                0x00800072                PROVIDE (__bss_end, .)
-                0x000018da                __data_load_start = LOADADDR (.data)
-                0x000018ec                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00800074                PROVIDE (__bss_end, .)
+                0x000018ee                __data_load_start = LOADADDR (.data)
+                0x00001902                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800072        0x0
-                0x00800072                PROVIDE (__noinit_start, .)
+.noinit         0x00800074        0x0
+                0x00800074                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x00800072                PROVIDE (__noinit_end, .)
-                0x00800072                _end = .
-                0x00800072                PROVIDE (__heap_start, .)
+                0x00800074                PROVIDE (__noinit_end, .)
+                0x00800074                _end = .
+                0x00800074                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -412,19 +411,19 @@ LOAD d:/edu/cat/interfacing/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x12c0
+.stab           0x00000000     0x12b4
  *(.stab)
  .stab          0x00000000      0x948 ./DIO_prog.o
  .stab          0x00000948      0x120 ./LED_config.o
                                 0x18c (size before relaxing)
  .stab          0x00000a68      0x384 ./LED_prog.o
                                 0x408 (size before relaxing)
- .stab          0x00000dec      0x4d4 ./main.o
-                                0x558 (size before relaxing)
+ .stab          0x00000dec      0x4c8 ./main.o
+                                0x54c (size before relaxing)
 
-.stabstr        0x00000000      0xa28
+.stabstr        0x00000000      0xa59
  *(.stabstr)
- .stabstr       0x00000000      0xa28 ./DIO_prog.o
+ .stabstr       0x00000000      0xa59 ./DIO_prog.o
 
 .stab.excl
  *(.stab.excl)

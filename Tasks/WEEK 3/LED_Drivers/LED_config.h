@@ -11,7 +11,8 @@
 typedef struct{
 	u8 u8_LedPortID;
 	u8 u8_LedPinID;
-	u8 u8_LedState;
+	u8 u8_LedConnection;
+	u8 u8_Ledinital;
 }LED;
 
 #define LEDS_NUM 3

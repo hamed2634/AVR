@@ -5,12 +5,14 @@
  *      Author: LENOVO
  */
 
-#include "DIO_int.h"
 #include "stdTypes.h"
 #include "errorStates.h"
 
 #include "Switch_priv.h"
 #include "Switch_config.h"
+
+#include "DIO_int.h"
+
 
 
 

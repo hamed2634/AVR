@@ -1,9 +1,11 @@
-#include "DIO_int.h"
-#include "stdTypes.h"
 #include "errorStates.h"
+#include "stdTypes.h"
 
 #include "Switch_config.h"
 #include "Switch_int.h"
+
+#include "DIO_int.h"
+
 
 extern SW Switch_AStrSwitches[SW_NUMS];
 int main(void){
