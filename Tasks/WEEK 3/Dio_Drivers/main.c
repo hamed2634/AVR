@@ -1,8 +1,8 @@
+#include "DIO_int.h"
 #include "stdTypes.h"
 #include "errorStates.h";
 
 
-#include "DIO_init.h"
 
 int main(void){
 

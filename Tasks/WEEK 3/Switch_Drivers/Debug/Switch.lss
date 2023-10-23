@@ -1710,8 +1710,8 @@ int main(void){
 	u8 Local_u8State = 0;
  afc:	19 82       	std	Y+1, r1	; 0x01
 	while(1){
-		Switch_enuGetState(&Switch_AStrSwitches[2], &Local_u8State);
- afe:	86 e6       	ldi	r24, 0x66	; 102
+		Switch_enuGetState(&Switch_AStrSwitches[0], &Local_u8State);
+ afe:	80 e6       	ldi	r24, 0x60	; 96
  b00:	90 e0       	ldi	r25, 0x00	; 0
  b02:	9e 01       	movw	r18, r28
  b04:	2f 5f       	subi	r18, 0xFF	; 255

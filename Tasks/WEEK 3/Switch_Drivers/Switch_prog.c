@@ -5,13 +5,13 @@
  *      Author: LENOVO
  */
 
+#include "DIO_int.h"
 #include "stdTypes.h"
 #include "errorStates.h"
 
 #include "Switch_priv.h"
 #include "Switch_config.h"
 
-#include "DIO_init.h"
 
 
 ES Switch_enuInit(SW* copy_AStrSwitches){
@@ -23,9 +23,9 @@ ES Switch_enuInit(SW* copy_AStrSwitches){
 			DIO_enuSetPinDirection(copy_AStrSwitches[Local_u8Iterator].u8_SwitchPortID, copy_AStrSwitches[Local_u8Iterator].u8_SwitchPinID, DIO_u8INPUT);
 			DIO_enuSetPinValue(copy_AStrSwitches[Local_u8Iterator].u8_SwitchPortID, copy_AStrSwitches[Local_u8Iterator].u8_SwitchPinID, copy_AStrSwitches[Local_u8Iterator].u8_SwitchState);
 		}
+		Local_enuErrorState = ES_OK;
 	}
 
-	Local_enuErrorState = ES_OK;
 	return Local_enuErrorState;
 }
 
@@ -38,6 +38,7 @@ ES Switch_enuGetState(SW* copy_AStrSwitches,u8* copy_pu8SwState){
 		if(copy_AStrSwitches->u8_SwitchState == DIO_u8PULL_UP){
 			*copy_pu8SwState = !(*copy_pu8SwState);
 		}
+		Local_enuErrorState = ES_OK;
 	}
 
 	return Local_enuErrorState;

@@ -1,6 +1,6 @@
 
-#ifndef DIO_INIT_H_
-#define DIO_INIT_H_
+#ifndef DIO_INT_H_
+#define DIO_INT_H_
 
 
 #define DIO_u8PORTA 		0
@@ -45,4 +45,4 @@ ES DIO_enuTogPin(u8 Copy_u8PortID, u8 Copy_u8PinID);
 
 
 
-#endif /* DIO_INIT_H_ */
+#endif /* DIO_INT_H_ */
